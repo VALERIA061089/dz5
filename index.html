@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Библиотека</title>
+</head>
+<body>
+    <header>
+        <h1>Моя Библиотека</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Избранное</a></li>
+                <li><a href="#">Обратная связь</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form">
+                <h2>Библиотека</h2>
+                <label>
+                    Название книги
+                    <input type="text" placeholder="Введите название книги" id="bookName">
+                </label>
+                <label>
+                    Автор
+                    <input type="text" placeholder="Введите автора книги" id="bookAuthor">
+                </label>
+                <label>
+                    Год издания
+                    <input type="text" placeholder="Введите год издания" id="bookYear">
+                </label>
+                <label>
+                    Жанр книги
+                    <input type="text" placeholder="Введите жанр книги" id="bookGenre">
+                </label>
+                <label> Выберите категорию
+                    <select id="status_read" name="status">
+                        <option value="false">Не прочитано</option>
+                        <option value="true">Прочитано</option>
+                    </select>
+                </label>
+                    <button id="add">Добавить книгу</button>
+                    <div id="result"></div>
+        </section>
+        <h2>Всего книг: <span id="totalBooks">0</span></h2>
+        <section class="filter">
+            <input type="text" id="filterBook" placeholder="Укажите параметры фильтра">
+            <input id="filterBookButton" type="submit" value="Показать">
+            <br>
+            <br>
+        </section>
+        <button id="btn_delete_all">Удалить всё</button>
+        <button id="btn btn_update" onclick="location.reload(); return false;">Обновить страницу</button>
+    </main>   
+</body>
+    <footer>
+        <div class="links">
+            <a href="#">Главная</a>
+            <a href="#">Каталог</a>
+            <a href="#">Избранное</a>
+            <a href="#">Обратная связь</a>
+        </div>
+        <div class="copyright">Copyright (c) Urban-university, 2024</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

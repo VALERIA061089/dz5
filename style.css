@@ -1,0 +1,78 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    background-color: #d0d1d3;
+    background: url(./images/1.jpg) no-repeat;
+    background-size: cover;
+   }
+
+   body {
+    margin: 0px;
+    padding: 0px;
+   }
+
+   main {
+    margin: 30px;
+   }
+
+   h1 {
+    color: beige;
+    font-size: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+   }
+
+   nav a {
+    color: rgb(242, 248, 249);
+    text-decoration: none;
+   }
+
+   nav a:hover {
+    background: gray;
+   }
+
+   .navigation {
+    list-style-image: url(/images/pin-columnn.svg)
+   }
+
+   footer {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+   }
+
+   footer .links {
+    margin-bottom: 10px;
+   }
+
+   footer .links > a {
+    color: #295f7b;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+   }
+
+   .copyright {
+    color: rgb(108, 117, 125);
+   }
+
+   form,
+   label {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+   }
+
+   label, 
+   option {
+    padding-bottom: 10px;
+   }
+
+   .result,
+   .summ_book {
+    padding: 10px;
+   }
